@@ -1,0 +1,84 @@
+/* Container and General Styles */
+.data-history-container {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title Section */
+.data-history-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.data-history-title h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.data-history-title p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Data History Section */
+.data-history-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-history-section h2 {
+    color: #007bff;
+    font-size: 24px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.data-history-section p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Audio and Video Elements */
+audio, video {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Chatbot Container */
+.chatbot-container {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .data-history-container {
+        padding: 10px;
+    }
+
+    .data-history-section {
+        padding: 15px;
+    }
+
+    .data-history-title h1 {
+        font-size: 24px;
+    }
+
+    .data-history-title p {
+        font-size: 14px;
+    }
+
+    .data-history-section h2 {
+        font-size: 20px;
+    }
+}

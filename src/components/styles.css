@@ -1,0 +1,330 @@
+/* Background Color for Home Page */
+/* Background Color for Home Page */
+.home-container {
+  background-color: #fffde7; /* Soft yellow background color for positivity */
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  align-items: center; /* Center align all items */
+}
+
+.awareness-module-card {
+  background-color: #ffffff; /* White background for a clean look */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center; /* Center the content for better alignment */
+  width: 80%; /* Optional: Adjust width as needed */
+  position: absolute;
+  left: 20px; /* Adjust position to move it towards the left */
+}
+.awareness-module-card h4 {
+  margin-bottom: 10px;
+  font-size: 1.5rem; /* Larger font for the title */
+  color: #333; /* Darker color for contrast */
+}
+
+.awareness-module-card p {
+  margin-bottom: 15px;
+  color: #555; /* Slightly lighter color for the text */
+}
+
+.module-button {
+  background-color: #42a5f5; /* Primary color for buttons */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.module-button:hover {
+  background-color: #1e88e5; /* Darker shade on hover */
+}
+  
+  /* Fixed Navbar Styling */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #1f4068;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li {
+    margin: 0 20px;
+  }
+  
+  .nav-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-list a:hover {
+    background-color: #ffd166;
+    color: #1f4068;
+    border-radius: 5px;
+  }
+  
+  /* Layout Container for Circular and Other Components */
+ /* Layout Container for Circular and Other Components */
+.layout-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px); /* Adjust height to fit below the navbar and user profile */
+  margin-top: 150px; /* Adjust this margin to create space between awareness module and the circular layout */
+}
+
+/* Circular Layout for Crime Rate Percentage */
+.circular-layout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px; /* Adjusted for better visibility */
+  height: 400px; /* Adjusted for better visibility */
+  border-radius: 50%;
+  background-color: #1f4068;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Center Crime Statistics */
+.center-stat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffd166;
+  border-radius: 50%;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+  /* Positioning Elements Around Center */
+  .home-feature {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #903749;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 0;
+  }
+
+  .pie-chart-container {
+    position: relative; /* Keeps it in the flow of the document */
+    margin-top: 100px; /* Increase this value to move the pie chart further down */
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Static Reports on the Left Side of the Circular Layout */
+  .static-reports {
+    position: absolute;
+    left: -200px; /* Adjusted to fit within the page */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #903749;
+    padding: 20px; /* Increased padding for larger size */
+    width: 150px; /* Adjusted width for bigger size */
+    height: 150px; /* Adjusted height for bigger size */
+    border-radius: 50%; /* Makes the element circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  /* Awareness Module Positioned to the Right Side of the Circular Layout */
+  /* .awareness-module {
+    position: absolute;
+    right: -500px;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    background-color: #903749;
+    padding: 10px;
+    z-index: 1;
+  } */
+  
+  /* Law Chatbot Positioned Below the Circular Layout */
+  /* .law-chatbot {
+    position: absolute;
+    bottom: -300px; Adjusted to fit within the page 
+    left: -250px; /* Move slightly towards the left 
+    transform: translate(0%, 50%);
+    background-color: #903749;
+    padding: 10px;
+    z-index: 1;
+  } */
+  
+  /* User Profile Positioning */
+  .user-profile {
+    position: absolute;
+    top: 50px; /* Adjusted to align with the awareness module */
+    right: 20px; /* Positioned to the right of the awareness module */
+    width: 200px;
+    height: 125px;
+    background-color: #1f4068;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  /* Awareness Module and Law Chatbot Below User Profile */
+  .awareness-and-chatbot {
+    position: fixed;
+    top: 300px; /* Positioned below User Profile */
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .awareness-module {
+    background-color: #903749;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  /* Positioning for the Law Chatbot */
+.law-chatbot {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  right: 20px;  /* Distance from the right edge of the viewport */
+  background-color: #903749;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+  
+  /* Profile Picture Styling */
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    border: 2px solid #ffd166;
+  }
+  
+  /* Styling for the Module Button */
+  .module-button {
+    padding: 5px 10px;
+    background-color: #00bcd4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .module-button:hover {
+    background-color: #008c9e;
+    transform: scale(1.05);
+  }
+  /* Larger Pie Chart */
+.larger-pie-chart {
+  width: 400px; /* Increase or decrease size as needed */
+  height: 400px;
+  margin: 0 auto; /* Center align */
+}
+/* src/components/styles.css */
+
+.login-container {
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+
+  /* Responsive Circular Layout */
+  @media (max-width: 768px) {
+    .circular-layout {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .home-feature {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .center-stat {
+      padding: 10px;
+    }
+  }
+  
